@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikan Hias Trenggalek</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: red;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .fish {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .fish-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .fish-card:hover {
+      transform: scale(1.05);
+    }
+
+    .fish-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    #pemesanan {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .kontak {
+      background-color: blue;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .kontak a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ikan Hias Trenggalek</h1>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="#pemesanan">Pemesanan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container" id="produk">
+    <h2 style="text-align:center;">Produk Ikan Hias</h2>
+    <div class="fish">
+      <div class="fish-card" onclick="document.getElementById('pemesanan').scrollIntoView({behavior: 'smooth'});">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Betta_fish.jpg" alt="Ikan Cupang">
+        <h3>Ikan Cupang</h3>
+        <p>Rp 5.000 / Ekor</p>
+      </div>
+      <div class="fish-card" onclick="document.getElementById('pemesanan').scrollIntoView({behavior: 'smooth'});">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Poecilia_reticulata_1.jpg" alt="Ikan Guppy">
+        <h3>Ikan Guppy</h3>
+        <p>Rp 10.000 / Pasang</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="pemesanan">
+    <h2 style="text-align:center;">Pemesanan</h2>
+    <p style="text-align:center;">Silakan hubungi kami melalui WhatsApp di bawah ini untuk pemesanan.</p>
+    <div style="text-align:center;">
+      <a href="https://wa.me/628977921575" target="_blank">
+        <button style="padding: 10px 20px; font-size: 16px; background-color: green; color: white; border: none; border-radius: 5px;">
+          Pesan via WhatsApp
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <div class="kontak" id="kontak">
+    <h3>Kontak Kami</h3>
+    <p>WhatsApp: <a href="https://wa.me/628977921575" target="_blank">08977921575</a></p>
+  </div>
+
+</body>
+</html>
